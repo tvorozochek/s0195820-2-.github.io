@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-7.0.1-web/css/all.min.css">
+</head>
+<body>
+    
+    <header class="head">
+
+        <div class="head-wrapper">
+
+            <div class="head-left">
+
+                <div class="head-logo"><i class="fa-solid fa-folder-open head-logo-img"></i></div>
+
+                <div class="head-title"><h3 class="head-h3">Сайт</h3></div>
+
+            </div>
+
+
+            <nav class="head-nav">
+
+                <a href="#" class="head-nav-a">Ссылки</a>
+
+                <a href="#" class="head-nav-a">Таблица</a>
+
+                <a href="#" class="head-nav-a">Форма</a>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+    <section class="main" id="main">
+        <div class="main-wrapper">
+            <ul class="main-ul">
+                <li class="main-li"><a href="http://kubsu.ru" class="main-a">абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                <li class="main-li"><a href="https://kubsu.ru" class="main-a">абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                <li class="main-li"><a href="https://kubsu.ru" class="main-a"><img src="./images/spider-man.webp" alt="человек паук" class="main-img"></a></li>
+                <li class="main-li"><a href="./about/about.html" class="main-a">сокращенная ссылка на внутреннюю страницу</a></li>
+                <li class="main-li"><a href="./index.html" class="main-a">сокращенная ссылка на главную страницу</a></li>
+                <li class="main-li"><a href="#main" class="main-a">ссылка на фрагмент текущей страницы</a></li>
+                <li class="main-li"><a href="https://kubsu.ru/search?query=math&sort=date&limit=10" class="main-a">ссылка с тремя параметрами в URL</a></li>
+                <li class="main-li"><a href="https://kubsu.ru/profile?id=12345" class="main-a">ссылка с параметром id в URL</a></li>
+                <li class="main-li"><a href="./hello.html" class="main-a">относительная на страницу в текущем каталоге</a></li>
+                <li class="main-li"><a href="./about/about.html" class="main-a">относительная на страницу в каталоге about</a></li>
+                <li class="main-li"><a href="../hello.html" class="main-a">относительная на страницу в каталоге уровнем выше текущего</a></li>
+                <li class="main-li"><a href="../../hello.html" class="main-a">относительная на страницу в каталоге двумя уровнями выше</a></li>
+                <li class="main-li"><p class="main-p">а так же вы можете посетить наш <a href="https://kubsu.ru" class="main-a">чудесный сайт</a></p></li>
+                <li class="main-li"><a href="https://example.com/article#chapter2">ссылка на фрагмент страницы стороннего сайта</a></li>
+                <li class="main-li">
+                    <div class="main-li-block">
+                        <img src="./images/spider-man.webp" alt="Человек-паук" usemap="#imageMap" class="main-img">
+                        <map name="imageMap">
+                            <area shape="circle" coords="150,150,50" href="https://kubsu.ru" alt="Перейти на сайт КубГУ" title="Главная страница КубГУ">
+                            <area shape="rect" coords="10,10,100,100" href="https://kubsu.ru/about" alt="О КубГУ" title="О университете">
+                        </map>
+                    </div>
+                </li>
+                <li class="main-li"><a href="" class="main-a">ссылка с пустым href</a></li>
+                <li class="main-li"><a class="main-a">ссылка без href</a></li>
+                <li class="main-li"><a href="https://kubsu.ru" class="main-a" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+                <li class="main-li"><a href="https://kubsu.ru" class="main-a" rel="noindex">запрещенная для индексации поисковиками</a></li>
+                <li class="main-li">
+                    <ol class="main-ol">
+                        <li class="main-li"><a href="https://kubsu.ru" class="main-a" title="Главная страница КубГУ">Главная</a></li>
+                        <li class="main-li"><a href="https://kubsu.ru/about" class="main-a" title="О университете">О нас</a></li>
+                        <li class="main-li"><a href="https://kubsu.ru/admission" class="main-a" title="Информация для абитуриентов">Поступление</a></li>
+                    </ol>
+                </li>
+                <li class="main-li"><a href="ftp://user:password@ftp.example.com/file.txt" class="main-a">cсылка на файл на сервере FTP с авторизацией</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="table">
+
+        <div class="table-wrapper">
+
+            <table class="table-main">
+
+                <tr class="table-str">
+
+                    <th class="tabel-title">Имя</th>
+
+                    <th class="tabel-title">Фамилия</th>
+
+                    <th class="tabel-title">Возраст</th>
+                    
+                    <th class="tabel-title">Должность</th>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <td class="table-content tabel-chet">Александр</td>
+
+                    <td class="table-content tabel-chet">Иванов</td>
+
+                    <td class="table-content tabel-chet">35</td>
+
+                    <td class="table-content tabel-chet">Руководитель отдела маркетинга</td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <td class="table-content">Мария</td>
+
+                    <td class="table-content">Смирнова</td>
+
+                    <td class="table-content">28</td>
+
+                    <td class="table-content">Ведущий дизайнер</td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <td class="table-content tabel-chet">Дмитрий</td>
+
+                    <td class="table-content tabel-chet">Кузнецов</td>
+
+                    <td class="table-content tabel-chet">42</td>
+
+                    <td class="table-content tabel-chet">Главный инженер</td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <td class="table-content">Екатерина</td>
+
+                    <td class="table-content">Петрова</td>
+
+                    <td class="table-content">31</td>
+
+                    <td class="table-content">Менеджер по продажам</td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <td class="table-content tabel-chet">Алексей</td>
+
+                    <td class="table-content tabel-chet">Васильев</td>
+
+                    <td class="table-content tabel-chet">29</td>
+
+                    <td class="table-content tabel-chet">Разработчик программного обеспечения</td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <td class="table-content">Ольга</td>
+
+                    <td class="table-content">Соколова</td>
+
+                    <td class="table-content">33</td>
+
+                    <td class="table-content">Специалист по кадрам</td>
+
+                </tr>
+                
+            </table>
+
+        </div>
+
+    </section>
+
+    <section class="form">
+        <div class="form-wrapper">
+            <form action="#" class="form-main">
+                <label for="fio" class="form-label">Ваше Фио:</label>
+                <input type="text" id="fio" name="fio" class="form-inp" required>
+                <label for="tel-num" class="form-label">Ваш номер телефона:</label>
+                <input type="tel" id="tel-num" name="tel-num" class="form-inp" required>
+                <label for="mail" class="form-label">Ваш e-mail:</label>
+                <input type="email" id="mail" name="mail" class="form-inp" required>
+                <label for="date" class="form-label">Ваша дата рождения:</label>
+                <input type="date" id="date" name="date" class="form-inp" required>
+                <label for="gender" class="form-label">Ваш пол:</label>
+                <div class="form-block">
+                    <input type="radio" id="male" name="gender" value="male" class="form-inp" required>
+                    <label for="male" class="form-label">Мужской</label>
+                </div>
+                <div class="form-block">
+                    <input type="radio" id="female" name="gender" value="female" class="form-inp" required>
+                    <label for="female" class="form-label">Женский</label>
+                </div>
+                <div class="form-block">
+                    <input type="radio" id="dru" name="gender" value="dru" class="form-inp" required>
+                    <label for="dru" class="form-label">Друид 40-го уровня</label>
+                </div>
+                <label for="prog-lang" class="form-label">Ваш любимый язык програмирования:</label>
+                <select name="prog-lang" id="prog-lang" class="form-select" required>
+                    <option value="pas" class="form-option">Pascal</option>
+                    <option value="c" class="form-option">C</option>
+                    <option value="cpp" class="form-option">C++</option>
+                    <option value="js" class="form-option">JavaScript</option>
+                    <option value="php" class="form-option">PHP</option>
+                    <option value="py" class="form-option">Python</option>
+                    <option value="java" class="form-option">Java</option>
+                    <option value="hask" class="form-option">Haskel</option>
+                    <option value="clo" class="form-option">Clojure</option>
+                    <option value="pro" class="form-option">Prolog</option>
+                    <option value="sca" class="form-option">Scala</option>
+                </select>
+                <label for="bio" class="form-label">Ваша биография:</label>
+                <textarea id="bio" name="bio" rows="5" class="form-textarea" required></textarea>
+                <div class="form-block">
+                    <input type="checkbox" id="agreement" name="agreement" class="form-chek" required>
+                    <label for="agreement" class="form-label">С контрактом ознакомлен(а)</label>
+                </div>
+                <button type="submit" class="form-but">Сохранить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-wrapper">
+
+            <p class="footer-cop">(с) Кубарев Иван</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
